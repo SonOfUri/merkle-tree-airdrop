@@ -33,9 +33,6 @@ contract AirDropERC1155Test is Test {
         // Initializes an array with fixed size of 3 to store the Merkle proof.
         bytes32[] memory proof = new bytes32[](9);
         // These are precalculated leaf hashes for the Merkle proof.
-//        proof[0] = 0xefd4bd68076cdbd8491cef3a4a34fc4a7670133156ebe35f2a5f171094a23808;
-//        proof[1] = 0xd498feb50eed00b4b08e5619cd7533ac1a13d7dafda640d2288d94ce70319477;
-//        proof[2] = 0xf3652c14710490596ee869e8ee031019be0050852ab683ed322685897140166d;
         proof[0] =  0xf83ca0388f551737cb62b255877d87f4c642318039bf8917c0fd1ec43b322098;
         proof[1] =  0xb2564203a6ff557aa735f670b5ff4552226b146a1479186854a740306ee818f0;
         proof[2] =  0xdf866059a2d2c4ba80efb172da60b697a053746d6c753df4ac9d5d3291c48db6;
@@ -64,6 +61,7 @@ contract AirDropERC1155Test is Test {
         // Now checks if Alice's balance matches the amount claimed.
         assertEq(airdropERC1155.balanceOf(alice, tokenId), amount, "Final balance of the token is incorrect");
     }
+
 
     // This is the test function.
     function testClaimAirDropOmega() public {
