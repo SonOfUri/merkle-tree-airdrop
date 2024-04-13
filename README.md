@@ -1,3 +1,11 @@
+## Database.json Content
+[
+"address",
+"index",
+"amount",
+"tokenId"
+]
+
 ## Foundry
 
 **Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
